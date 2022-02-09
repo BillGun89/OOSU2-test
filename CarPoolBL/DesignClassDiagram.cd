@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="CarPoolBL.CarPool">
+    <Position X="0.75" Y="2" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAgAEAAAAAAAAAAARAAAACAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>CarPool.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="unitOfWork" />
+      <Property Name="LoggedIn" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CarPoolBL.Models.Member">
+    <Position X="0.75" Y="4.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAACAAQAAAAAAAAAAAAAAgABAAA=</HashCode>
+      <FileName>Models\Member.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Reserved" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CarPoolBL.Models.Car">
+    <Position X="5.25" Y="5" Width="4.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAQAAAAAQAAAAAAAAAAAAgAAIAAAAA=</HashCode>
+      <FileName>Models\Car.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CarPoolBL.Internals.UnitOfWork">
+    <Position X="5.25" Y="2" Width="4" />
+    <TypeIdentifier>
+      <HashCode>gAAAAIAAAACAAAAAAAAAAAAAAAAACAAEAAAAAAAQAAA=</HashCode>
+      <FileName>Internals\UnitOfWork.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CarPoolBL.Models.Reservation">
+    <Position X="1.5" Y="7.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAQAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Reservation.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Member" />
+      <Property Name="Car" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CarPoolBL.Internals.Repository&lt;T&gt;">
+    <Position X="9.75" Y="2" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAIAAAAAABAAAAARAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Internals\Repository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CarPoolBL.Models.Invoice">
+    <Position X="5.75" Y="7.25" Width="3.75" />
+    <AssociationLine Name="Reservation" Type="CarPoolBL.Models.Reservation">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="0.053" Y="0.066" Height="0.182" Width="0.933" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAACAAAEAAAAAAAAAAAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>Models\Invoice.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Reservation" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
